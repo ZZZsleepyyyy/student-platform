@@ -438,8 +438,6 @@ const from = ref('')
 onMounted(() => {
   from.value = route.query.from || ''
   
-<<<<<<< HEAD
-=======
   // 获取书籍列表
   fetchBooks()
   // 获取课程推荐
@@ -451,7 +449,6 @@ onMounted(() => {
   // 获取备考历史记录
   fetchExamHistory()
   
->>>>>>> 67e6add ( 修改应用页面逻辑，准备对接后端API)
   // 如果是从学习页面跳转过来的，自动填充问题和选中的文本
   if (route.query.question) {
     question.value = route.query.question
